@@ -30,7 +30,7 @@
   "config": {
     "html": "html/config.html",
     "js": [
-      "https://print.kintoneapp.com/autopage-plugin/config.min.js"
+      "https://print.kintoneapp.com/autopage-plugin/config.en.min.js"
     ],
     "css": [
       "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",

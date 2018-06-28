@@ -9,14 +9,16 @@ Batch =
   canSubmit: false
   createDOM: ->
     # create dom
-    $container = $('<div class="pcreator-container"></div>')
+    $container = $('<div class="pcreator-container pcreator-container-new-ui"></div>')
+    $selectWrapper = $('<div class="kintoneplugin-select"></div>')
     $select = $('<select class="pcreator-sheets-select"></select>')
     $form = $('<form method="POST" target="_blank"></form>')
     $data = $('<input type="hidden" name="data" value=""/>')
-    $submit = $('<input type="submit" value=\"' + (t._ 'output') + '\" />')
+    $submit = $('<input type="submit" value=\"' + (t._ 'output') + '\" class="pcreator-submit-new-ui" />')
     $data.appendTo $form
     $submit.appendTo $form
-    $select.appendTo $container
+    $select.appendTo $selectWrapper
+    $selectWrapper.appendTo $container
     $form.appendTo $container
 
     # add sheets
