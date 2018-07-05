@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "version": 2,
+  "version": 3,
   "type": "APP",
   "name": {
     "ja": "プリントクリエイター自動改ページプラグイン",
@@ -8,9 +8,9 @@
     "zh": "print-creator auto-page plug-in"
   },
   "description": {
-    "ja": "プリントクリエイターで自動改ページを行うためのプラグイン",
-    "en": "print-creator auto-page plug-in",
-    "zh": "print-creator auto-page plug-in"
+    "ja": "プリントクリエイターで自動改ページを行うためのプラグイン (現在のバージョン:3)",
+    "en": "print-creator auto-page plug-in (Ver.3)",
+    "zh": "print-creator auto-page plug-in (Ver.3)"
   },
   "icon": "images/icon.png",
   "homepage_url": {
@@ -20,21 +20,21 @@
   },
   "desktop": {
     "js": [
-      "https://print.kintoneapp.com/autopage-plugin/desktop.min.js"
+      "https://print.kintoneapp.com/autopage-plugin-v3/desktop.min.js"
     ],
     "css": [
-      "https://print.kintoneapp.com/autopage-plugin/desktop.min.css",
+      "https://print.kintoneapp.com/autopage-plugin-v3/desktop.min.css",
       "https://print.kintoneapp.com/build/kintone-lib.min.css"
     ]
   },
   "config": {
     "html": "html/config.html",
     "js": [
-      "https://print.kintoneapp.com/autopage-plugin/config.min.js"
+      "https://print.kintoneapp.com/autopage-plugin-v3/config.min.js"
     ],
     "css": [
       "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
-      "https://print.kintoneapp.com/autopage-plugin/config.min.css"
+      "https://print.kintoneapp.com/autopage-plugin-v3/config.min.css"
     ],
     "required_params": ["appCode"]
   }

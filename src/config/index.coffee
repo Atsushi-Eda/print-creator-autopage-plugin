@@ -16,7 +16,6 @@ Main = Vue.extend
       showSheets: []
       autoSheets: []
       kintoneFields: []
-      t: t
 
   computed:
     firstSheetId: ->
@@ -87,6 +86,9 @@ Main = Vue.extend
 
   components:
     'auto-sheet': require './auto-sheet'
+
+  filters:
+    t: (tag) -> (t._ tag)
 
 new Main
   el: "#print-creator-plugin-config"

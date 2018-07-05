@@ -3,12 +3,12 @@
     <i class="fa fa-times"></i>
   </button>
   <div class="form-group">
-    <label>{{ (t._('select_table')) }}</label>
+    <label>{{ 'select_table'|t }}</label>
     <select v-model="tableField" class="form-control w400" options="tableFieldOptions"></select>
   </div>
   <div class="form-group">
     <div class="form-inline">
-      <label>{{ (t._('sheets_candidate')) }}</label>
+      <label>{{ 'sheets_candidate'|t }}</label>
       <div v-repeat="subSheets">
         <div v-component="sub-sheet"></div>
       </div>

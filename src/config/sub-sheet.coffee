@@ -5,8 +5,6 @@ t   = require './i18n'
 
 SubSheet = Vue.extend
   template: require './templates/sub-sheet.html'
-  data: ->
-      t: t
   replace: true
   inherit: true
 
@@ -31,5 +29,8 @@ SubSheet = Vue.extend
         from: +lastSubSheet.to + 1
         to: +lastSubSheet.to + 5
         sheet: @firstSheetId
+
+  filters:
+    t: (tag) -> (t._ tag)
 
 module.exports = SubSheet

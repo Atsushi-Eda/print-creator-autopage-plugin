@@ -1,20 +1,20 @@
 <div class="print-creator-plugin-config">
-  <h4>{{ (t._('basic_configuration')) }}</h4>
+  <h4>{{ 'basic_configuration'|t }}</h4>
   <div class="app-code form-group">
-    <label for="appCode">{{ (t._('app_code')) }}</label>
-    <div class="description">{{ (t._('input_app_code')) }}</div>
+    <label for="appCode">{{ 'app_code'|t }}</label>
+    <div class="description">{{ 'input_app_code'|t }}</div>
     <input type="text" id="appCode" class="form-control w400"
            v-model="appCode" v-on="change: changeAppCode"/>
   </div>
 
-  <h4>{{ (t._('sheets_configuration')) }}</h4>
+  <h4>{{ 'sheets_configuration'|t }}</h4>
   <div class="show-sheets form-group">
     <div class="form-inline">
       <select class="w400 h100" v-model="showSheets" options="sheetOptions" multiple></select>
     </div>
   </div>
 
-  <h4>{{ (t._('auto_page_configuration')) }}</h4>
+  <h4>{{ 'auto_page_configuration'|t }}</h4>
   <div class="form-group">
     <div v-repeat="autoSheets" class="mb10" style="background-color: #ddd; padding: 5px;">
       <div v-component="auto-sheet"></div>
@@ -24,5 +24,5 @@
     </button>
   </div>
 
-  <button type="button" class="btn btn-primary" v-on="click: submit">{{ (t._('save')) }}</button>
+  <button type="button" class="btn btn-primary" v-on="click: submit">{{ 'save'|t }}</button>
 </div>
