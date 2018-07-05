@@ -1,9 +1,12 @@
 Vue = require 'vue'
 _   = require 'lodash'
 u   = require '../utils'
+t   = require './i18n'
 
 SubSheet = Vue.extend
   template: require './templates/sub-sheet.html'
+  data: ->
+      t: t
   replace: true
   inherit: true
 

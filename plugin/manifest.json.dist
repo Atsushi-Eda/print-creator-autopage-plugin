@@ -23,7 +23,8 @@
       "https://localhost:8000/desktop.js"
     ],
     "css": [
-      "https://localhost:8000/desktop.css"
+      "https://localhost:8000/desktop.css",
+      "https://print.kintoneapp.com/build/kintone-lib.min.css"
     ]
   },
   "config": {

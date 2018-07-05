@@ -3,12 +3,12 @@
     <i class="fa fa-times"></i>
   </button>
   <div class="form-group">
-    <label>テーブルの選択</label>
+    <label>{{ (t._('select_table')) }}</label>
     <select v-model="tableField" class="form-control w400" options="tableFieldOptions"></select>
   </div>
   <div class="form-group">
     <div class="form-inline">
-      <label>帳票候補</label>
+      <label>{{ (t._('sheets_candidate')) }}</label>
       <div v-repeat="subSheets">
         <div v-component="sub-sheet"></div>
       </div>

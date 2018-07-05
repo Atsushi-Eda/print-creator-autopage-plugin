@@ -4,6 +4,7 @@ _      = require 'lodash'
 api    = require '../components/print-creator/api'
 config = require '../config'
 u      = require '../utils'
+t   = require './i18n'
 
 Vue.config.debug = config.debug
 
@@ -15,6 +16,7 @@ Main = Vue.extend
       showSheets: []
       autoSheets: []
       kintoneFields: []
+      t: t
 
   computed:
     firstSheetId: ->
@@ -47,7 +49,7 @@ Main = Vue.extend
     addAutoSheet: ->
       tableField = _.first @tableFields
       if not tableField?.code?
-        alert '自動改ページの設定テーブルフィールドが1つ以上必要です'
+        alert (t._ 'table_fields_required')
         return false
       autoSheet =
         tableField: tableField.code

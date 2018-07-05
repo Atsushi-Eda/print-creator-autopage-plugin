@@ -8,5 +8,5 @@ module.exports = {
     css: "styles/index.scss"
   },
   pluginDir: "plugin",
-  pluginKey: "./keys/plugin.kgbcggkkcaehbcfohccjchbnkjoenpoh.ppk"
+  pluginKey: "./keys/plugin.phpmfcabcnhencjfdbdomkbjcjaodajc.ppk"
 };

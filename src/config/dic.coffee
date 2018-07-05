@@ -1,0 +1,26 @@
+module.exports =
+  ja:
+    basic_configuration: "基本設定"
+    app_code: "アプリコード"
+    input_app_code: "プリントクリエイターで取得したアプリコードを入力してください"
+    sheets_configuration: "表示する帳票の設定"
+    auto_page_configuration: "自動改ページの設定"
+    save: "保存"
+    select_table: "テーブルの選択"
+    sheets_candidate: "帳票候補"
+    row: "行"
+    sheets: "帳票"
+    table_fields_required: "自動改ページの設定テーブルフィールドが1つ以上必要です"
+
+  en:
+    basic_configuration: "Basic configuration"
+    app_code: "App-code"
+    input_app_code: "Please input the app-code obtained by print-creator."
+    sheets_configuration: "Configuration of sheets to be displayed"
+    auto_page_configuration: "Auto-page configuration"
+    save: "Save"
+    select_table: "Select table"
+    sheets_candidate: "Sheets candidate"
+    row: "row"
+    sheets: "Sheets"
+    table_fields_required: "One or more table fields are required"

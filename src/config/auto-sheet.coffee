@@ -1,9 +1,12 @@
 Vue = require 'vue'
 _   = require 'lodash'
 u   = require '../utils'
+t   = require './i18n'
 
 AutoSheet = Vue.extend
   template: require './templates/auto-sheet.html'
+  data: ->
+      t: t
   replace: true
   inherit: true
 
