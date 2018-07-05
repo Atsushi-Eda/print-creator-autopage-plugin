@@ -30,7 +30,4 @@ SubSheet = Vue.extend
         to: +lastSubSheet.to + 5
         sheet: @firstSheetId
 
-  filters:
-    t: (tag) -> (t._ tag)
-
 module.exports = SubSheet

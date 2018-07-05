@@ -8,6 +8,8 @@ t   = require './i18n'
 
 Vue.config.debug = config.debug
 
+Vue.filter 't', (tag) -> (t._ tag)
+
 Main = Vue.extend
   template: require './templates/index.html'
   data: ->
@@ -86,9 +88,6 @@ Main = Vue.extend
 
   components:
     'auto-sheet': require './auto-sheet'
-
-  filters:
-    t: (tag) -> (t._ tag)
 
 new Main
   el: "#print-creator-plugin-config"

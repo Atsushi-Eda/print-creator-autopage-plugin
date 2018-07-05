@@ -22,7 +22,4 @@ AutoSheet = Vue.extend
   components:
     'sub-sheet': require './sub-sheet'
 
-  filters:
-    t: (tag) -> (t._ tag)
-
 module.exports = AutoSheet
